@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+  color: #232323;
+}
+
+section.hero {
+  background: #F8F8F8;
+}
+
+.add-to-cart {
+  border: 2px solid #FE5F1E;
+  color: #FE5F1E;
+}
+.add-to-cart:hover {
+  background: #FE5F1E;
+  border-color: #fff;
+  color: #fff;
+}
