@@ -23,3 +23,17 @@ section.hero
         color: $pure;
     }
 }
+
+.btn-primary
+{
+    background: $primary;
+    &:hover{
+        background: $primary-hover;
+    }
+}
+
+.login
+{
+    background: $secondary;
+    min-height: calc(100vh-60px);
+}
