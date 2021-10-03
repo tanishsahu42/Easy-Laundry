@@ -2,27 +2,32 @@
 
 <section class="cart">
 
-
+    <% if(session.cart){ %> 
     <div class="order container mx-auto w-1/2">
         <div class="  flex items-center border-b border-gray-400 pb-4">
             <h1 class="font-bold ml-4 text-2xl">Order Summary</h1>
         </div>
+        <div class="cart-items">
 
+         <% for(let clothes of Object.values(session.cart.items))   { %> 
         <div class=" mb-4 pizza-list">
             <div class="flex item-center mt-10">
-            <img class="w-24 " src="/img/cotton.jpg" alt="">
+            <img class="w-24 " src="/img/<%=clothes.item.image%>" alt="">
             <div class="ml-4 mr-4 flex-1">
-                <h1>tshirt</h1>
+                <h1><%=clothes.item.name%></h1>
             </div>
-            <span class="flex-1">quantity</span>
-            <span class="font-bold text-lg ">RS.10</span>
+            <span class="flex-1"><%=clothes.qty%></span>
+            <span class="font-bold text-lg "><%=clothes.item.price*clothes.qty %></span>
         </div>
         </div>
+       <%}%>
+
+    </div>
         <hr >
         <div class="text-right py-10">
             <div >
                 <span>Total amount:</span>
-                <span class="font-bold text-lg">RS.100</span>
+                <span class="font-bold text-lg"><%=session.cart.totalPrice%></span>
             </div>
 
             <div >
@@ -42,7 +47,9 @@
 
         </div>
     </div>
-    <!-- <div class="empty-cart mt-12">
+
+    <% } else { %> 
+   <div class="empty-cart mt-12">
    
         <div class="container mx -auto text-center">
        
@@ -55,5 +62,5 @@
        </div>
     </div>
 
-    -->
+    <% } %> 
 </section>

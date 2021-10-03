@@ -1,5 +1,6 @@
 @import './_variables.scss';
-
+@import '~noty/src/noty.scss';
+@import '~noty/src/themes/mint.scss';
 body{
     font-family: sans-serif;
     color:$dark;
@@ -35,5 +36,11 @@ section.hero
 .login
 {
     background: $secondary;
-    min-height: calc(100vh-60px);
+    min-height: 100vh
+}
+
+
+.noty_theme__mint {
+    border-radius: 50px!important;
+    padding-left: 8px!important;
 }

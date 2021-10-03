@@ -20,19 +20,25 @@
     <section class="menu container mx-auto py-8 px-8">
 
         <h1 class="text-xl font-bold mb-8 ">Types of Clothes</h1>
-        <div>
-            <div class="w-64">
-                <img class="h-40 mb-4 mx-auto" src="/img/cotton.jpg" alt="">
+        <div class="grid grid-cols-4 gap-y-12 gap-x-16 ">
+            
+            <% clothes.forEach(clothes => { %>
+                
+            
+            <div class="w-64 ">
+                <img class="h-40 mb-4 mx-auto" src="/img/<%= clothes.image %>" alt="">
                 <div class="text-center">
-                    <h1 class="mb-4 text-lg uppercase">tshirt</h1>
+                    <h1 class="mb-4 text-lg uppercase"><%= clothes.name %></h1>
                     <div class="flex items-center justify-around">
-                        <span>RS.10</span>
-                        <button class="add-to-cart py-1 px-6 rounded-full">
+                        <span><%= clothes.price%></span>
+                        <button data-clothes="<%= JSON.stringify(clothes) %>" class="add-to-cart py-1 px-6 rounded-full">
                             <span>add</span>
                         </button>
                     </div>
                 </div>
             </div>
+
+            <% });%>
         </div>
     </section>
 
