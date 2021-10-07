@@ -23,6 +23,11 @@ Solved problems of long queues ,lost token cards,absence of students when washer
 2. yarn dev
 3. connect mongodb 
 
-
+## Screenshots
+❮img src="screenshots/front.png" width="100" ❯
+❮img src="screenshots/cart.png" width="100" ❯
+❮img src="screenshots/userorders.png" width="100" ❯
+❮img src="screenshots/admindashboard.png" width="100" ❯
+❮img src="screenshots/getnotifi.png" width="100" ❯
 
 
