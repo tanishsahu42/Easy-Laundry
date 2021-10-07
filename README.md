@@ -25,5 +25,9 @@ Solved problems of long queues ,lost token cards,absence of students when washer
 
 ## Screenshots
 ![](screenshots/front.png)
+![](screenshots/cart.png)
+![](screenshots/userorders.png)
+![](screenshots/admindashboard.png)
+![](screenshots/getnotifi.png)
 
 
