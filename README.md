@@ -24,10 +24,22 @@ Solved problems of long queues ,lost token cards,absence of students when washer
 3. connect mongodb 
 
 ## Screenshots
+1.front page
 ![](screenshots/front.png)
+
+2.user cart:
 ![](screenshots/cart.png)
+
+3.user orders page:
 ![](screenshots/userorders.png)
+
+
+4.admin dashboard to track all orders:
 ![](screenshots/admindashboard.png)
+
+
+
+5.Admin get notified whenever a new order is placed:
 ![](screenshots/getnotifi.png)
 
 
